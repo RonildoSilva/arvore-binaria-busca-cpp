@@ -1,15 +1,34 @@
-# Arvores Binárias de Busca
-Implementações de Árvores Binárias de Busca, AVL e Árvore Rubro-Negra em C++
+# Árvores Binárias de Busca em C++
 
-## Windows:
-![Árvore AVL](https://s10.postimg.org/tzdpmkvp5/Captura_de_tela_2016_10_13_23_38_35.png)
+> Implementações de árvore binária de busca, árvore AVL e árvore rubro-negra, com impressão colorida no terminal.
 
-## Linux:
-### Árvore Binária de Busca
-![Árvore Binária de Busca](https://s15.postimg.org/e6kfehqa3/Arv_B.png "Árvore Binária de Busca")
+![status](https://img.shields.io/badge/status-concluído-success) ![cpp](https://img.shields.io/badge/C%2B%2B-11-blue)
 
-### Árvore AVL
-![Árvore AVL](https://s10.postimg.org/3qf2btyrd/Arv_AVL.png "Árvore AVL")
+## Sobre
+Trabalho da disciplina de Estrutura de Dados (UFC, 2016). As três estruturas compartilham a classe base `ArvoreBinaria`; `AVL` acrescenta fator de balanceamento e rotações, e `ArvoreRN` acrescenta cor nos nós e as correções de inserção. A impressão usa códigos ANSI para diferenciar nós vermelhos e pretos.
 
-### Árvore Rubro Negra
-![Árvore Rubro Negra](https://s11.postimg.org/aihgw3jrn/Arv_RN.png "Árvore Rubro Negra")
+## Stack
+- C++11, biblioteca padrão
+- Compila com g++ em Linux ou MinGW em Windows
+
+## Estrutura de pastas
+```text
+No.h / No.cpp                     nó com valor, filhos, pai, balanceamento e cor
+ArvoreBinaria.h / .cpp            inserção, busca e remoção da ABB
+AVL.h / AVL.cpp                   rotações simples e duplas, verificação de balanceamento
+ArvoreRN.h / ArvoreRN.cpp         inserção rubro-negra e recoloração
+Impressao.h / Impressao.cpp       impressão hierárquica no terminal
+main.cpp                          menu de testes
+```
+
+## Como executar
+```bash
+g++ -std=c++11 *.cpp -o arvores
+./arvores
+```
+
+## Status
+Concluído. Trabalho acadêmico; não recebe manutenção.
+
+## Autor
+Ronildo Silva · ronildo.comp@gmail.com
